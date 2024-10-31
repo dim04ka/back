@@ -128,6 +128,7 @@ app.post('/create', async (req, res) => {
             price: req.body.price,
             small_description: req.body.small_description,
             title: req.body.title,
+            sizes: req.body.sizes,
             id: uniqueId
         }
         const response = await db.collection('products').doc(uniqueId).set(userJson);

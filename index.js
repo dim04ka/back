@@ -161,6 +161,7 @@ app.post('/update', async (req, res) => {
                 images: req.body.images,
                 price: req.body.price,
                 small_description: req.body.small_description,
+                size: req.body.sizes,
                 title: req.body.title,
             });
         res.send(userRef);
